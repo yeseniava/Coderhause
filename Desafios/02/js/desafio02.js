@@ -10,9 +10,7 @@ let numero = obtenerNumero();
             numero = obtenerNumero("Error intenta con un numero menor del 1 al 10");
         }
     }
-        alert("adivinaste el numero felicidades");
-
-
+    alert("adivinaste el numero felicidades");
 
 function obtenerNumero(mensaje = "Adivina un numero del 1 al 10"){
     let num;

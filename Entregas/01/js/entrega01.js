@@ -3,7 +3,7 @@ Proyecto ecommerce apparel
 */
 let storeProducts = [];
 const basket = new Basket();
-showMenu();
+//showMenu();
 
 function showMenu(){
     let option = prompt(`Elige la opcion deseada 
@@ -68,3 +68,12 @@ function printableProducts(){
     });
     return str;
 }
+
+function mostrar(){
+    let element = document.getElementById("mostrar");
+    element.style.display = 'block'; 
+}
+
+function agregar() {
+    alert("The form was submitted");
+  }

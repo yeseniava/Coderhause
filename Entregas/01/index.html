@@ -9,7 +9,33 @@
     <title>Entrega 01</title>
   </head>
   <body>
-    <h1>Entrega 01!</h1>
+    
+    <div class="container">
+      <div id="menu"> 
+        <button onclick="mostrar()" type="button" class="btn btn-outline-primary" id="agregarProducto">Agregar Producto</button>
+       <!-- <button type="button" class="btn btn-outline-primary" id="mostrarProducto">Mostrar Producto</button>
+        <button type="button" class="btn btn-outline-danger" id="removerProducto">Remover Producto</button> -->
+      </div> 
+
+      <div id="mostrar" style="display:none ">
+        <form onsubmit="agregar()">
+          <div class="form-group">
+            <label for="sku">SKU</label>
+            <input type="text" class="form-control" id="sku"  placeholder="Ingresa SKU">
+          </div>
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" class="form-control" id="name"  placeholder="Ingresa Nombre">
+          </div>
+          <div class="form-group">
+            <label for="description">Descripcion</label>
+            <input type="text" class="form-control" id="descrip"  placeholder="Ingresa Descripción">
+          </div>
+          <button type="submit" class="btn btn-primary">Agregar</button>
+        </form>
+      </div>
+    </div>
+    
 
 
     <script src="js/product.js"></script>
