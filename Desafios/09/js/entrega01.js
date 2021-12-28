@@ -73,3 +73,33 @@ function mostrar(){
     let element = document.getElementById("mostrar");
     element.style.display = 'block'; 
 }
+
+function agregar(e) {
+    e.preventDefault();
+    //console.log(e);
+    //console.log(e.target.sku.value);
+   
+    let temProd = new Product(e.target.sku.value, e.target.name.value,
+    e.target.descrip.value, 0, 0);
+    storeProducts.push(temProd);
+    printProducts(e.target.sku.value, e.target.name.value,e.target.descrip.value );
+    e.target.sku.value = "";
+    e.target.name.value = "";
+    e.target.descrip.value = "";
+   
+  }
+
+
+  function printProducts(sku, name, descrip){
+    let element = document.getElementById("showProducts");
+    element.style.display = 'block'; 
+    let li = document.createElement("li");
+    li.append(sku + " - ");
+    li.append(name + " - ");
+    li.append(descrip);
+    let list = document.getElementById("products");
+    list.append(li);
+
+
+   // <li class="list-group-item">Cras justo odio</li>
+  }

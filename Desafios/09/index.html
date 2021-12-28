@@ -18,21 +18,30 @@
       </div> 
 
       <div id="mostrar" style="display:none ">
-        <form>
+        <form onsubmit="agregar(event)">
           <div class="form-group">
             <label for="sku">SKU</label>
-            <input type="text" class="form-control" id="sku"  placeholder="Ingresa SKU">
+            <input type="text" class="form-control" id="sku" name="sku" placeholder="Ingresa SKU">
           </div>
           <div class="form-group">
             <label for="name">Nombre</label>
-            <input type="text" class="form-control" id="name"  placeholder="Ingresa Nombre">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa Nombre">
           </div>
           <div class="form-group">
             <label for="description">Descripcion</label>
-            <input type="text" class="form-control" id="descrip"  placeholder="Ingresa Descripción">
+            <input type="text" class="form-control" id="descrip" name="descrip" placeholder="Ingresa Descripción">
           </div>
           <button type="submit" class="btn btn-primary">Agregar</button>
         </form>
+      
+      </div>
+
+      <div id="showProducts" style="display: none;">
+        <h1>Productos Agregados</h1>
+        <ul class="list-group list-group-flush" id="products">
+        
+         
+        </ul>
       </div>
     </div>
     
